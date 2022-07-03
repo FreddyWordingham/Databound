@@ -12,24 +12,27 @@
 </style>
 
 <div class="container">
-    <div class="item hover-underline-animation" onclick="toggle_panel('about')">
+    <div
+        class="item hover-underline-animation"
+        onclick="$('.panel').slideUp(500);$('#about.panel').slideToggle(500)"
+    >
         About <i class="bi bi-lightbulb-fill"></i>
     </div>
     <div
         class="item hover-underline-animation"
-        onclick="toggle_panel('services')"
+        onclick="$('.panel').slideUp(500);$('#services.panel').slideToggle(500)"
     >
         Services <i class="bi bi-tools"></i>
     </div>
     <div
         class="item hover-underline-animation"
-        onclick="toggle_panel('people')"
+        onclick="$('.panel').slideUp(500);$('#people.panel').slideToggle(500)"
     >
         People <i class="bi bi-people-fill"></i>
     </div>
     <div
         class="item hover-underline-animation"
-        onclick="toggle_panel('contact')"
+        onclick="$('.panel').slideUp(500);$('#contact.panel').slideToggle(500)"
     >
         Contact <i class="bi bi-envelope-open-fill"></i>
     </div>

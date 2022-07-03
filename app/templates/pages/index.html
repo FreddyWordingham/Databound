@@ -1,25 +1,19 @@
 {% extends "base.html" %} {% block content %}
 
 <div>
-    <h1 style="text-align: center; font-size: 200px" onclick="toggle_panel()">
+    <h1
+        style="text-align: center; font-size: 200px"
+        onclick="$('.panel').slideUp(500)"
+    >
         {% include "components/logo.html" %}
     </h1>
-    <div id="navbar">{% include "components/navbar.html" %}</div>
+    <div id="navbar" style="margin-bottom: 100px">
+        {% include "components/navbar.html" %}
+    </div>
     <div id="about" class="panel">{% include "panel/about.html" %}</div>
     <div id="services" class="panel">{% include "panel/services.html" %}</div>
     <div id="people" class="panel">{% include "panel/people.html" %}</div>
     <div id="contact" class="panel">{% include "panel/contact.html" %}</div>
 </div>
-
-<script>
-    toggle_panel = (panel) => {
-        if (panel === undefined) {
-            $(".panel").slideUp(500);
-            return;
-        }
-
-        $("#" + panel + ".panel").toggle(500);
-    };
-</script>
 
 {% endblock %}
