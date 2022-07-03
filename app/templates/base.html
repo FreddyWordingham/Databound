@@ -32,12 +32,14 @@
         <script src="/static/client.js"></script>
     </head>
     <body>
-        <div
-            id="wrapper"
-            class="d-flex align-items-center justify-content-center"
-            style="height: 100vh; display: none"
-        >
-            {% block content %} {% endblock %}
+        <div class="container">
+            <div
+                id="wrapper"
+                class="row d-flex align-items-center justify-content-center"
+                style="height: 100vh; display: none"
+            >
+                {% block content %} {% endblock %}
+            </div>
         </div>
     </body>
 </html>

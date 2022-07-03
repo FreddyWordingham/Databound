@@ -1,39 +1,43 @@
 <style>
-    .container {
-        display: flex;
-        justify-content: space-evenly;
-    }
     .item {
         font-size: 25px;
     }
-    .item:hover {
-        font-size: 25px;
+    .unit {
+        text-align: center;
     }
 </style>
 
-<div class="container">
-    <div
-        class="item hover-underline-animation"
-        onclick="$('.panel').slideUp(500);$('#about.panel').slideToggle(500)"
-    >
-        About <i class="bi bi-lightbulb-fill"></i>
+<div class="row">
+    <div class="unit col-sm-3">
+        <div
+            class="item hover-underline-animation"
+            onclick="$('.panel').slideUp(500);$('#about.panel').slideToggle(500)"
+        >
+            About <i class="bi bi-lightbulb-fill"></i>
+        </div>
     </div>
-    <div
-        class="item hover-underline-animation"
-        onclick="$('.panel').slideUp(500);$('#services.panel').slideToggle(500)"
-    >
-        Services <i class="bi bi-tools"></i>
+    <div class="unit col-sm-3">
+        <div
+            class="item hover-underline-animation"
+            onclick="$('.panel').slideUp(500);$('#services.panel').slideToggle(500)"
+        >
+            Services <i class="bi bi-tools"></i>
+        </div>
     </div>
-    <div
-        class="item hover-underline-animation"
-        onclick="$('.panel').slideUp(500);$('#people.panel').slideToggle(500)"
-    >
-        People <i class="bi bi-people-fill"></i>
+    <div class="unit col-sm-3">
+        <div
+            class="item hover-underline-animation"
+            onclick="$('.panel').slideUp(500);$('#people.panel').slideToggle(500)"
+        >
+            People <i class="bi bi-people-fill"></i>
+        </div>
     </div>
-    <div
-        class="item hover-underline-animation"
-        onclick="$('.panel').slideUp(500);$('#contact.panel').slideToggle(500)"
-    >
-        Contact <i class="bi bi-envelope-open-fill"></i>
+    <div class="unit col-sm-3">
+        <div
+            class="item hover-underline-animation"
+            onclick="$('.panel').slideUp(500);$('#contact.panel').slideToggle(500)"
+        >
+            Contact <i class="bi bi-envelope-open-fill"></i>
+        </div>
     </div>
 </div>
