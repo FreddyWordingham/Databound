@@ -1,0 +1,36 @@
+<style>
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .item {
+        font-size: 25px;
+    }
+    .item:hover {
+        font-size: 25px;
+    }
+</style>
+
+<div class="container">
+    <div class="item hover-underline-animation" onclick="toggle_panel('about')">
+        About <i class="bi bi-lightbulb-fill"></i>
+    </div>
+    <div
+        class="item hover-underline-animation"
+        onclick="toggle_panel('services')"
+    >
+        Services <i class="bi bi-tools"></i>
+    </div>
+    <div
+        class="item hover-underline-animation"
+        onclick="toggle_panel('people')"
+    >
+        People <i class="bi bi-people-fill"></i>
+    </div>
+    <div
+        class="item hover-underline-animation"
+        onclick="toggle_panel('contact')"
+    >
+        Contact <i class="bi bi-envelope-open-fill"></i>
+    </div>
+</div>
