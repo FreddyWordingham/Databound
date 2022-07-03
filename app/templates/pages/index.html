@@ -1,12 +1,15 @@
 {% extends "base.html" %} {% block content %}
 
 <div>
-    <h1
-        style="text-align: center; font-size: 10vw"
-        onclick="$('.panel').slideUp(500);$('.icon').css('color', '#FFF')"
-    >
-        {% include "components/logo.html" %}
-    </h1>
+    <div style="text-align: center">
+        <h1
+            class="hover-underline-animation"
+            style="font-size: 10vw"
+            onclick="$('.panel').slideUp(500);$('.icon').css('color', '#FFF')"
+        >
+            {% include "components/logo.html" %}
+        </h1>
+    </div>
     <div id="navbar" style="margin-bottom: 100px">
         {% include "components/navbar.html" %}
     </div>
